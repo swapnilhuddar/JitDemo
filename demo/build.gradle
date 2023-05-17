@@ -39,9 +39,9 @@ dependencies {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.gitlab.Swapnilhuddar'
-            artifactId = 'jitdemo'
-            version = '0.0.2'
+            groupId = 'com.github.swapnilhuddar'
+            artifactId = 'JitDemo'
+            version = '0.0.3'
 
             afterEvaluate {
                 from components.release
