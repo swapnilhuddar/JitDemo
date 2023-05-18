@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.github.Swapnilhuddar'
-version = '0.0.3'
+version = '0.0.4'
 
 android {
     namespace 'com.easebuzz.demo'
@@ -44,7 +44,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.swapnilhuddar'
             artifactId = 'JitDemo'
-            version = '0.0.3'
+            version = '0.0.4'
 
             afterEvaluate {
                 from components.release
