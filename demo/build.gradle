@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.github.Swapnilhuddar'
-version = '0.0.5'
+version = '0.0.6'
 
 android {
     namespace 'com.easebuzz.demo'
@@ -14,7 +14,7 @@ android {
         minSdk 14
         targetSdk 33
         multiDexEnabled true
-        versionName "0.0.5"
+        versionName "0.0.6"
     }
 
     buildTypes {
@@ -50,7 +50,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.swapnilhuddar'
             artifactId = 'JitDemo'
-            version = '0.0.5'
+            version = '0.0.6'
 
             afterEvaluate {
                 from components.release
