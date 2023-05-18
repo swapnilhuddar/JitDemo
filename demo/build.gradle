@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'com.github.Swapnilhuddar'
-version = '0.0.6'
+version = '0.0.7'
 
 android {
     namespace 'com.easebuzz.demo'
@@ -14,7 +14,7 @@ android {
         minSdk 14
         targetSdk 33
         multiDexEnabled true
-        versionName "0.0.6"
+        versionName "0.0.7"
     }
 
     buildTypes {
@@ -45,15 +45,17 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
-publishing {
-    publications {
-        release(MavenPublication) {
-            groupId = 'com.github.swapnilhuddar'
-            artifactId = 'JitDemo'
-            version = '0.0.6'
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                groupId = 'com.github.swapnilhuddar'
+                artifactId = 'JitDemo'
+                version = '0.0.7'
 
-            afterEvaluate {
-                from components.release
+                afterEvaluate {
+                    from components.release
+                }
             }
         }
     }
