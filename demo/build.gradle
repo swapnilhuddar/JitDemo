@@ -3,6 +3,9 @@ plugins {
     id 'maven-publish'
 }
 
+group = 'com.github.Swapnilhuddar'
+version = '0.0.3'
+
 android {
     namespace 'com.easebuzz.demo'
     compileSdk 33
